@@ -1,0 +1,109 @@
+.advantages {
+	border-bottom: 1px solid #e6e7eb;
+	padding: 55px 0 110px;
+	background-color: #fff;
+}
+
+.advantages__block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.advantages__element {
+	flex-basis: 22.2%;
+	text-align: center;
+}
+
+.advantages__element:first-child {
+	background: url("../img/icon2.png") no-repeat 50% 25%;
+}
+
+.advantages__element:nth-child(2) {
+	background: url("../img/icon3.png") no-repeat 50% 25%;
+}
+
+.advantages__element:nth-child(3) {
+	background: url("../img/icon4.png") no-repeat 50% 25%;
+}
+
+.advantages__element:last-child {
+	background: url("../img/icon5.png") no-repeat 50% 25%;
+}
+
+.advantages__icon {
+	display: block;
+	margin: 25px auto;
+	width: 73px;
+	height: 73px;
+	border: 1px solid #e5e5e5;
+	border-radius: 1px;
+	transform: rotate(0deg);
+	transition: all 0.5s ease;
+}
+
+.advantages__element:hover .advantages__icon {
+	border-color: #e95b4d;
+	transform: rotate(45deg);
+}
+
+.advantages__element:hover .advantages__icon img {
+	border-color: #e95b4d;
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.advantages__element:hover .advantages__title {
+	color: #e74c3c;
+}
+
+.advantages__title {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 1.35px;
+	color: #6a6a6a;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 35px;
+	transition: color 0.5s ease;
+}
+
+.advantages__title::after {
+	content: "";
+	display: block;
+	width: 41px;
+	height: 1px;
+	background-color: #888;
+	position: absolute;
+	left: 50%;
+	top: 40px;
+	transform: translateX(-50%);
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.advantages__description {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 300;
+	letter-spacing: 0.9px;
+	color: #999;
+}
+
+@media (max-width: 980px) {
+	.advantages {
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 768px) {
+	.advantages__element {
+		flex-basis: 49%;
+	}
+}
+
+@media (max-width: 480px) {
+	.advantages__element {
+		flex-basis: 100%;
+	}
+}

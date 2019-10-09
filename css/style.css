@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Source+Sans+Pro:300,400,600,700&display=swap');
+/*font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+
+@import url("section-top.css");
+@import url("section-advantages.css");
+@import url("section-history.css");
+@import url("section-services.css");
+@import url("section-works.css");
+@import url("section-study.css");
+@import url("section-counts.css");
+@import url("section-pricing.css");
+@import url("section-team.css");
+@import url("section-integration.css");
+@import url("section-blog.css");
+@import url("section-contacts.css");
+@import url("section-footer.css");
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.container {
+	min-width: 320px;
+	max-width: 100%;
+}
+
+.wrap {
+	min-width: 320px;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.devider {
+	width: 7px;
+	height: 7px;
+	background-color: #e74c3c;
+	border-radius: 50%;
+	position: relative;
+}
+
+.devider::before {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 1px;
+	background-color: #f1ebe7;
+	position: absolute;
+	left: -94px;
+	top: 4px;
+}
+
+.devider::after {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 1px;
+	background-color: #f1ebe7;
+	position: absolute;
+	left: 21px;
+	top: 4px;
+}
+
+.btn {
+	display: inline-block;	
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;	
+	border-radius: 3px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+	transition: all 0.3s ease;
+}
+
+.title {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+
+
+
